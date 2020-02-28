@@ -80,17 +80,21 @@
 </iq>]]></example>
   </section1>
   <section1 topic='Use Cases' anchor='usecases'>
+
 	<p>For end users, this provides a way to be reminded about stuff
 	while being in a conversation, without the need to leave it and go
 	to some calendar application or similar and create a full event
-	there. By setting a reminder, a user will be notified by the server
-	at whatever given time the reminder is created with and with
-	whatever the description was set for such a reminder.</p>
+	there. By setting a reminder, a user will be notified by the
+	server at whatever given time the reminder is created with and
+	with whatever the description was set for such a reminder.</p>
+
 	<section2 topic='Creating a reminder' anchor='creating'>
+
 	  <p>A user wants to create a new reminder. For creating a
 	  reminder, an entity MUST send an IQ stanza with the 'type'
 	  attribute with a value of "set" and a direct &lt;reminder/&gt;
 	  child qualified by the "urn:xmpp:reminders:0" namespace.</p>
+
 	  <example caption='User creates a new reminder'><![CDATA[
 <iq from='juliet@capulet.net/balcony'
     to='capulet.net'
