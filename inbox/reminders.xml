@@ -101,19 +101,23 @@
     <text xml:lang='en'>Please go sleep before it's too late</text>
   </reminder>
 </iq>]]> </example>
+
+	  <p>The server MUST inform the user of the success. The response
+	  MUST include an empty &lt;reminder&gt; element that specifies
+	  the 'id' of the created reminder.</p>
+
 	  <example caption='Server acknowledges the reminder creation'><![CDATA[
 <iq id='abc123'
     to='juliet@capulet.net/balcony'
     from='capulet.net'
     type='result'>
-  <reminder xmlns='urn:xmpp:reminders:0' id='d414cec2-5369-11ea-9455-8b8d265047d9'>
-    <date>2020-02-19T23:41:00Z</date>
-    <text xml:lang='en'>Please go sleep before it's too late</text>
-  </reminder>
+  <reminder xmlns='urn:xmpp:reminders:0' id='d414cec2-5369-11ea-9455-8b8d265047d9' />
 </iq>]]></example>
-	  <p>Whenever the reminder's data sent by a client is not complete or
-	  in an invalid format, the server MUST send an error stanza of type
-	  'modify' and a 'bad-request' condition.</p>
+
+	  <p>Whenever the reminder's data sent by a client is not complete
+	  or in an invalid format, the server MUST send an error stanza of
+	  type 'modify' and a 'bad-request' condition.</p>
+
 	  <example caption='Server sends a bad-request error response'><![CDATA[
 <iq id='bad1'
     to='capulet.net'
