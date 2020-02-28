@@ -162,7 +162,7 @@
 	  <example caption='Server sends a reminder'><![CDATA[
 <message from='capulet.net' to='juliet@capulet.net/balcony' id='reminder1'>
   <reminder xmlns='urn:xmpp:reminders:0' id='d414cec2-5369-11ea-9455-8b8d265047d9'>
-    <date timezone='UTC'>2020-02-19T23:41:00Z</date>
+    <date>2020-02-19T23:41:00Z</date>
     <text xml:lang='en'>Please go sleep before it's too late</text>
   </reminder>
 </message>]]></example> 
